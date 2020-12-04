@@ -25,6 +25,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         initializeViewComponents()
+        
+        /*
         ApiController.shared.currentWeather(city: "Seoul").observeOn(MainScheduler.instance).subscribe(onNext: { data in
             self.tempLabel.text = "\(data.temperature)도"
             self.iconLabel.text = "\(data.icon)"
@@ -43,6 +45,7 @@ class ViewController: UIViewController {
                 return ApiController.shared.currentWeather(city: text ?? "Error").catchErrorJustReturn(ApiController.Weather.empty)
             }
             .asDriver(onErrorJustReturn: ApiController.Weather.empty)
+ */
     }
     
     func initializeViewComponents(){
