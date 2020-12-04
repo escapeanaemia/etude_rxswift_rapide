@@ -27,7 +27,8 @@ class ApiController{
     
     func currentWeather(city:String) -> Observable<Weather>{
         return Observable.just(
-            Weather(cityName: city, temperature: 20, humidity: 90, icon: iconNameToChar(icon: "01d"))
+//            Weather(cityName: city, temperature: 20, humidity: 90, icon: iconNameToChar(icon: "01d"))
+            Weather(cityName: city, temperature: 20, humidity: 90, icon: "CK")
         )
     }
 }
