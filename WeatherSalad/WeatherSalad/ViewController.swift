@@ -25,24 +25,21 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         initializeViewComponents()
-        ApiController.shared.currentWeather(city: "Seoul").observeOn(MainScheduler.instance).subscribe(onNext: { data in
-            self.tempLabel.text = "\(data.temperature)도"
-            self.iconLabel.text = "\(data.icon)"
-            self.humidityLabel.text = "\(data.humidity)"
-            self.cityNameLabel.text = data.cityName
-            print("\(data.temperature)도")
-            print(data.icon)
-            print(data.humidity)
-            print(data.cityName)
-        } ).disposed(by: self.disposeBag)
-        searchCityName.rx.text
-            .filter { (text) -> Bool in
-                return (text?.count ?? 0) > 0
-            }
-            .flatMap { (text) in
-                return ApiController.shared.currentWeather(city: text ?? "Error").catchErrorJustReturn(ApiController.Weather.empty)
-            }
-            .asDriver(onErrorJustReturn: ApiController.Weather.empty)
+        
+        ApiController.shared.getCurrentWeather(city: "Seoul")?.observeOn(MainScheduler.instance)
+            .subscribe(onNext: { (weather) in
+                self.tempLabel.text = "\(weather.temperature)도"
+                self.iconLabel.text = "\(weather.icon)"
+                self.humidityLabel.text = "\(weather.humidity)"
+                self.cityNameLabel.text = weather.cityName
+                print("\(weather.temperature)도")
+                print(weather.icon)
+                print(weather.humidity)
+                print(weather.cityName)
+            }).disposed(by: disposeBag)
+//        http://api.openweathermap.org/data/2.5/weather?q=Seoul&appid=55db388dc5585d5e70d85b63719f44bc&units=metric
+//  http://api.openweathermap.org/data/2.5/weather?q=Seoul&appid=55db388dc5585d5e70d85b63719f44bc&units=metric
+        
     }
     
     func initializeViewComponents(){
