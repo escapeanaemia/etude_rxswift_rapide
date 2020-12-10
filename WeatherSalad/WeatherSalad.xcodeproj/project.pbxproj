@@ -18,6 +18,7 @@
 		49195C48255BB02900E69932 /* WeatherSaladUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49195C47255BB02900E69932 /* WeatherSaladUITests.swift */; };
 		4967BC74256049B0003C68FC /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4967BC73256049B0003C68FC /* WeatherModel.swift */; };
 		4967BC7A25604E19003C68FC /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4967BC7925604E19003C68FC /* APIKey.swift */; };
+		49FB13902582581E008C36C4 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FB138F2582581E008C36C4 /* APIController.swift */; };
 		F3B3D25157AC4856F8BD367B /* Pods_WeatherSaladTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F63DAA7DFE51EBADB2E3E5 /* Pods_WeatherSaladTests.framework */; };
 		F745615FB5D7E025E3FB178E /* Pods_WeatherSalad_WeatherSaladUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 619D1FC4DEC70C34ADD55761 /* Pods_WeatherSalad_WeatherSaladUITests.framework */; };
 /* End PBXBuildFile section */
@@ -56,6 +57,7 @@
 		49195C49255BB02900E69932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4967BC73256049B0003C68FC /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		4967BC7925604E19003C68FC /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		49FB138F2582581E008C36C4 /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
 		619D1FC4DEC70C34ADD55761 /* Pods_WeatherSalad_WeatherSaladUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherSalad_WeatherSaladUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61F3832852CB8CF979351273 /* Pods-WeatherSaladTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherSaladTests.debug.xcconfig"; path = "Target Support Files/Pods-WeatherSaladTests/Pods-WeatherSaladTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7FBDA7A6A32A6C67D4A4A111 /* Pods-WeatherSalad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherSalad.release.xcconfig"; path = "Target Support Files/Pods-WeatherSalad/Pods-WeatherSalad.release.xcconfig"; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				49195C30255BB02800E69932 /* LaunchScreen.storyboard */,
 				49195C33255BB02800E69932 /* Info.plist */,
 				4967BC73256049B0003C68FC /* WeatherModel.swift */,
+				49FB138F2582581E008C36C4 /* APIController.swift */,
 				4967BC7925604E19003C68FC /* APIKey.swift */,
 			);
 			path = WeatherSalad;
@@ -415,6 +418,7 @@
 				49195C2A255BB02700E69932 /* ViewController.swift in Sources */,
 				49195C26255BB02700E69932 /* AppDelegate.swift in Sources */,
 				4967BC74256049B0003C68FC /* WeatherModel.swift in Sources */,
+				49FB13902582581E008C36C4 /* APIController.swift in Sources */,
 				49195C28255BB02700E69932 /* SceneDelegate.swift in Sources */,
 				4967BC7A25604E19003C68FC /* APIKey.swift in Sources */,
 			);
